@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="AT1" company="SDD" webLink="https://github.com/math2001/sdd-at1" view-date="2018-02-21" view-index="0" gantt-divider-location="300" resource-divider-location="300" version="2.8.6" locale="en_AU">
+    <description><![CDATA[The first assesment task for the software design and development course.]]></description>
+    <view zooming-state="default:3" id="gantt-chart">
+        <field id="tpd3" name="Name" width="167" order="0"/>
+        <field id="tpd4" name="Begin date" width="65" order="1"/>
+        <field id="tpd5" name="End date" width="64" order="2"/>
+        <timeline><![CDATA[18,5,1]]></timeline>
+        <option id="color.recent"><![CDATA[#ff9999 #9999ff #ccffcc]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="1" name="log book" color="#8cb6ce" meeting="false" start="2018-02-12" duration="40" complete="95" thirdDate="2018-02-12" thirdDate-constraint="0" expand="true"/>
+        <task id="19" name="Basic features" meeting="false" start="2018-02-16" duration="10" complete="50" expand="true">
+            <task id="5" name="Implement" color="#8cb6ce" meeting="false" start="2018-02-16" duration="5" complete="100" thirdDate="2018-02-16" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[the user can answer the question, and the program will tell him wheter he got the right answer or not]]></notes>
+            </task>
+            <task id="28" name="user proof" color="#8cb6ce" meeting="false" start="2018-02-23" duration="5" complete="0" thirdDate="2018-02-22" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="21" name="extra features" color="#9999ff" meeting="false" start="2018-03-02" duration="21" complete="90" thirdDate="2018-03-02" thirdDate-constraint="0" priority="0" expand="true">
+            <notes><![CDATA[Implement, review and document as we go
+
+- average
+- score
+- strike
+- options]]></notes>
+        </task>
+        <task id="22" name="get feedback" color="#ff9999" meeting="false" start="2018-03-02" duration="21" complete="10" thirdDate="2018-03-02" thirdDate-constraint="0" priority="2" expand="true">
+            <notes><![CDATA[From different persons]]></notes>
+        </task>
+        <task id="26" name="Test" color="#8cb6ce" meeting="false" start="2018-04-02" duration="5" complete="0" thirdDate="2018-04-02" thirdDate-constraint="0" priority="2" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Mathieu Paturel" function="1" contacts="mathieu.paturel@education.nsw.gov.au" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="26" resource-id="0" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="22" resource-id="0" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="21" resource-id="0" function="1" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles>
+        <role id="1" name="Everything"/>
+    </roles>
+</project>
