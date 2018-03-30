@@ -1,6 +1,7 @@
 ﻿Public Class frmOptions
 
     Private Sub frmOptions_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.CenterToParent()
         loadFromSettings()
     End Sub
 
@@ -16,10 +17,9 @@
         My.Settings.operator_ = cmbxOperator.Text
         My.Settings.rangeMax = txtRangeMax.Text
         My.Settings.rangeMin = txtRangeMin.Text
-        Me.Close()
     End Sub
 
-    Private Sub btnBack_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnOK.Click
+    Private Sub btnOK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnOK.Click
         If IsNumeric(txtRangeMax.Text) = False Or IsNumeric(txtRangeMin.Text) = False Then
             errorMessage("Invalid range number(s)", "Error")
             Return
@@ -30,7 +30,7 @@
         End If
 
         saveToSettings()
-
+        Me.Close()
         frmAsk.ask()
     End Sub
 
@@ -60,10 +60,7 @@
     Private Sub btnReset_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnReset.Click
         cmbxOperator.SelectedIndex = 0
         ckbxRandomOperator.Checked = True
-        txtRangeMax.Text = 0
-        txtRangeMin.Text = 12
-
-        saveToSettings()
-        Me.Close()
+        txtRangeMax.Text = 12
+        txtRangeMin.Text = 0
     End Sub
 End Class
