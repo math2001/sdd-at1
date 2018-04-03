@@ -20,3 +20,4 @@ C:\Users\Home\Documents\Visual Studio 2008\Projects\at1-2008\at1-2008\obj\Debug\
 C:\Users\Home\Documents\Visual Studio 2008\Projects\at1-2008\at1-2008\obj\Debug\at1-2008.vbproj.GenerateResource.Cache
 C:\Users\Home\Documents\Visual Studio 2008\Projects\at1-2008\at1-2008\obj\Debug\at1_2008.frmOptions.resources
 C:\Users\Home\Documents\Visual Studio 2008\Projects\at1-2008\at1-2008\bin\Debug\at1-2008.exe.config
+C:\Users\Home\Documents\Visual Studio 2008\Projects\at1-2008\at1-2008\obj\Debug\at1_2008.frmHelp.resources

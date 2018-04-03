@@ -136,4 +136,8 @@
     Private Sub btnAbout_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAbout.Click
         MessageBox.Show("Made by math2001 in march 2018", "About", MessageBoxButtons.OK, MessageBoxIcon.None)
     End Sub
+
+    Private Sub btnHelp_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnHelp.Click
+        frmHelp.ShowDialog()
+    End Sub
 End Class
