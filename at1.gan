@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="AT1" company="SDD" webLink="https://github.com/math2001/sdd-at1" view-date="2018-02-26" view-index="0" gantt-divider-location="300" resource-divider-location="300" version="2.8.6" locale="en_AU">
+<?xml version="1.0" encoding="UTF-8"?><project name="AT1" company="SDD" webLink="https://github.com/math2001/sdd-at1" view-date="2018-02-28" view-index="0" gantt-divider-location="300" resource-divider-location="300" version="2.8.6" locale="en_AU">
     <description><![CDATA[The first assesment task for the software design and development course.]]></description>
     <view zooming-state="default:2" id="gantt-chart">
         <field id="tpd3" name="Name" width="167" order="0"/>
         <field id="tpd4" name="Begin date" width="65" order="1"/>
         <field id="tpd5" name="End date" width="65" order="2"/>
-        <timeline><![CDATA[22,26,28,5,21,1,31]]></timeline>
+        <timeline><![CDATA[22,28,26,5,21,31,1]]></timeline>
         <option id="color.recent"><![CDATA[#ff9999 #9999ff #ccffcc]]></option>
     </view>
     <view id="resource-table">
@@ -42,7 +42,7 @@
             </task>
             <task id="28" name="user proof" color="#8cb6ce" meeting="false" start="2018-02-23" duration="5" complete="100" thirdDate="2018-02-23" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="21" name="extra features" color="#9999ff" meeting="false" start="2018-03-02" duration="16" complete="90" thirdDate="2018-03-02" thirdDate-constraint="0" priority="0" expand="true">
+        <task id="21" name="extra features" color="#9999ff" meeting="false" start="2018-03-02" duration="16" complete="100" thirdDate="2018-03-02" thirdDate-constraint="0" priority="0" expand="true">
             <notes><![CDATA[Implement, review and document as we go
 
 - average
@@ -50,11 +50,11 @@
 - strike
 - options]]></notes>
         </task>
-        <task id="22" name="get feedback" color="#ff9999" meeting="false" start="2018-03-02" duration="16" complete="10" thirdDate="2018-03-02" thirdDate-constraint="0" priority="2" expand="true">
+        <task id="22" name="get feedback" color="#ff9999" meeting="false" start="2018-03-02" duration="16" complete="100" thirdDate="2018-03-02" thirdDate-constraint="0" priority="2" expand="true">
             <notes><![CDATA[From different persons]]></notes>
         </task>
-        <task id="26" name="Test" color="#8cb6ce" meeting="false" start="2018-03-26" duration="5" complete="0" thirdDate="2018-03-26" thirdDate-constraint="0" priority="2" expand="true"/>
-        <task id="31" name="Documentation" color="#8cb6ce" meeting="false" start="2018-03-26" duration="10" complete="0" thirdDate="2018-03-26" thirdDate-constraint="0" expand="true"/>
+        <task id="26" name="Test" color="#8cb6ce" meeting="false" start="2018-03-26" duration="5" complete="100" thirdDate="2018-03-26" thirdDate-constraint="0" priority="2" expand="true"/>
+        <task id="31" name="Documentation" color="#8cb6ce" meeting="false" start="2018-03-26" duration="10" complete="100" thirdDate="2018-03-26" thirdDate-constraint="0" expand="true"/>
     </tasks>
     <resources>
         <resource id="0" name="Mathieu Paturel" function="1" contacts="mathieu.paturel@education.nsw.gov.au" phone=""/>
