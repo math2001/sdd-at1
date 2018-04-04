@@ -36,7 +36,7 @@ Partial Class frmOptions
         '
         'txtRangeMin
         '
-        Me.txtRangeMin.Location = New System.Drawing.Point(156, 145)
+        Me.txtRangeMin.Location = New System.Drawing.Point(156, 82)
         Me.txtRangeMin.Name = "txtRangeMin"
         Me.txtRangeMin.Size = New System.Drawing.Size(31, 20)
         Me.txtRangeMin.TabIndex = 3
@@ -45,7 +45,7 @@ Partial Class frmOptions
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(21, 148)
+        Me.Label6.Location = New System.Drawing.Point(21, 85)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(129, 13)
         Me.Label6.TabIndex = 18
@@ -56,7 +56,7 @@ Partial Class frmOptions
         Me.ckbxRandomOperator.AutoSize = True
         Me.ckbxRandomOperator.Checked = True
         Me.ckbxRandomOperator.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.ckbxRandomOperator.Location = New System.Drawing.Point(130, 73)
+        Me.ckbxRandomOperator.Location = New System.Drawing.Point(130, 50)
         Me.ckbxRandomOperator.Name = "ckbxRandomOperator"
         Me.ckbxRandomOperator.Size = New System.Drawing.Size(66, 17)
         Me.ckbxRandomOperator.TabIndex = 2
@@ -69,7 +69,7 @@ Partial Class frmOptions
         Me.cmbxOperator.Enabled = False
         Me.cmbxOperator.FormattingEnabled = True
         Me.cmbxOperator.Items.AddRange(New Object() {"+", "-", "*", "/"})
-        Me.cmbxOperator.Location = New System.Drawing.Point(130, 37)
+        Me.cmbxOperator.Location = New System.Drawing.Point(130, 14)
         Me.cmbxOperator.Name = "cmbxOperator"
         Me.cmbxOperator.Size = New System.Drawing.Size(75, 21)
         Me.cmbxOperator.TabIndex = 1
@@ -77,7 +77,7 @@ Partial Class frmOptions
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(73, 40)
+        Me.Label1.Location = New System.Drawing.Point(73, 17)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(51, 13)
         Me.Label1.TabIndex = 20
@@ -85,7 +85,7 @@ Partial Class frmOptions
         '
         'btnOK
         '
-        Me.btnOK.Location = New System.Drawing.Point(197, 214)
+        Me.btnOK.Location = New System.Drawing.Point(197, 124)
         Me.btnOK.Name = "btnOK"
         Me.btnOK.Size = New System.Drawing.Size(75, 23)
         Me.btnOK.TabIndex = 12
@@ -94,7 +94,7 @@ Partial Class frmOptions
         '
         'txtRangeMax
         '
-        Me.txtRangeMax.Location = New System.Drawing.Point(224, 145)
+        Me.txtRangeMax.Location = New System.Drawing.Point(224, 82)
         Me.txtRangeMax.Name = "txtRangeMax"
         Me.txtRangeMax.Size = New System.Drawing.Size(31, 20)
         Me.txtRangeMax.TabIndex = 4
@@ -103,7 +103,7 @@ Partial Class frmOptions
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(193, 148)
+        Me.Label2.Location = New System.Drawing.Point(193, 85)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(25, 13)
         Me.Label2.TabIndex = 22
@@ -112,7 +112,7 @@ Partial Class frmOptions
         'btnCancel
         '
         Me.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.btnCancel.Location = New System.Drawing.Point(116, 214)
+        Me.btnCancel.Location = New System.Drawing.Point(116, 124)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(75, 23)
         Me.btnCancel.TabIndex = 11
@@ -121,7 +121,7 @@ Partial Class frmOptions
         '
         'btnReset
         '
-        Me.btnReset.Location = New System.Drawing.Point(35, 214)
+        Me.btnReset.Location = New System.Drawing.Point(35, 124)
         Me.btnReset.Name = "btnReset"
         Me.btnReset.Size = New System.Drawing.Size(75, 23)
         Me.btnReset.TabIndex = 10
@@ -134,7 +134,7 @@ Partial Class frmOptions
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.btnCancel
-        Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.ClientSize = New System.Drawing.Size(284, 167)
         Me.Controls.Add(Me.btnReset)
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.Label2)

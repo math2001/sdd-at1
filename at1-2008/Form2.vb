@@ -2,7 +2,6 @@
 
     Private Sub frmOptions_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.CenterToParent()
-        loadFromSettings()
     End Sub
 
     Public Sub loadFromSettings()
@@ -42,7 +41,7 @@
         MessageBox.Show(text, title, MessageBoxButtons.OK, MessageBoxIcon.Error)
     End Sub
 
-    Public Function rndNumber()
+    Public Function getRndNumber()
         Return CInt(Math.Ceiling(Rnd() * (My.Settings.rangeMax - My.Settings.rangeMin) + My.Settings.rangeMin))
     End Function
 

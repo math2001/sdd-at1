@@ -12,11 +12,11 @@
     Public Sub ask()
         operator_ = frmOptions.getOperator()
 
-        lblOperand1.Text = frmOptions.rndNumber()
+        lblOperand1.Text = frmOptions.getRndNumber()
 
         ' avoid division by 0
         Do
-            lblOperand2.Text = frmOptions.rndNumber()
+            lblOperand2.Text = frmOptions.getRndNumber()
         Loop While operator_ = "/" And lblOperand2.Text = "0"
 
         txtResult.Focus()
@@ -129,15 +129,23 @@
         ask()
     End Sub
 
-    Private Sub btnOptions_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnOptions.Click
+    Private Sub OptionsToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OptionsToolStripMenuItem.Click
         frmOptions.ShowDialog()
     End Sub
 
-    Private Sub btnAbout_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAbout.Click
+    Private Sub HelpToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles HelpToolStripMenuItem1.Click
+        frmHelp.ShowDialog()
+    End Sub
+
+    Private Sub AboutToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AboutToolStripMenuItem.Click
         MessageBox.Show("Made by math2001 in march 2018", "About", MessageBoxButtons.OK, MessageBoxIcon.None)
     End Sub
 
-    Private Sub btnHelp_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnHelp.Click
-        frmHelp.ShowDialog()
+    Private Sub ExitToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ExitToolStripMenuItem.Click
+        Me.Close()
+    End Sub
+
+    Private Sub AT1ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AT1ToolStripMenuItem.Click
+
     End Sub
 End Class
