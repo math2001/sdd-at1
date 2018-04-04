@@ -22,30 +22,24 @@ Partial Class frmOptions
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.txtRangeMin = New System.Windows.Forms.TextBox
         Me.Label6 = New System.Windows.Forms.Label
         Me.ckbxRandomOperator = New System.Windows.Forms.CheckBox
         Me.cmbxOperator = New System.Windows.Forms.ComboBox
         Me.Label1 = New System.Windows.Forms.Label
         Me.btnOK = New System.Windows.Forms.Button
-        Me.txtRangeMax = New System.Windows.Forms.TextBox
         Me.Label2 = New System.Windows.Forms.Label
         Me.btnCancel = New System.Windows.Forms.Button
         Me.btnReset = New System.Windows.Forms.Button
+        Me.txtRangeMin = New System.Windows.Forms.NumericUpDown
+        Me.txtRangeMax = New System.Windows.Forms.NumericUpDown
+        CType(Me.txtRangeMin, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtRangeMax, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'txtRangeMin
-        '
-        Me.txtRangeMin.Location = New System.Drawing.Point(156, 82)
-        Me.txtRangeMin.Name = "txtRangeMin"
-        Me.txtRangeMin.Size = New System.Drawing.Size(31, 20)
-        Me.txtRangeMin.TabIndex = 3
-        Me.txtRangeMin.Text = "0"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(21, 85)
+        Me.Label6.Location = New System.Drawing.Point(12, 85)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(129, 13)
         Me.Label6.TabIndex = 18
@@ -59,7 +53,7 @@ Partial Class frmOptions
         Me.ckbxRandomOperator.Location = New System.Drawing.Point(130, 50)
         Me.ckbxRandomOperator.Name = "ckbxRandomOperator"
         Me.ckbxRandomOperator.Size = New System.Drawing.Size(66, 17)
-        Me.ckbxRandomOperator.TabIndex = 2
+        Me.ckbxRandomOperator.TabIndex = 5
         Me.ckbxRandomOperator.Text = "Random"
         Me.ckbxRandomOperator.UseVisualStyleBackColor = True
         '
@@ -88,22 +82,14 @@ Partial Class frmOptions
         Me.btnOK.Location = New System.Drawing.Point(197, 124)
         Me.btnOK.Name = "btnOK"
         Me.btnOK.Size = New System.Drawing.Size(75, 23)
-        Me.btnOK.TabIndex = 12
+        Me.btnOK.TabIndex = 30
         Me.btnOK.Text = "OK"
         Me.btnOK.UseVisualStyleBackColor = True
-        '
-        'txtRangeMax
-        '
-        Me.txtRangeMax.Location = New System.Drawing.Point(224, 82)
-        Me.txtRangeMax.Name = "txtRangeMax"
-        Me.txtRangeMax.Size = New System.Drawing.Size(31, 20)
-        Me.txtRangeMax.TabIndex = 4
-        Me.txtRangeMax.Text = "12"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(193, 85)
+        Me.Label2.Location = New System.Drawing.Point(198, 85)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(25, 13)
         Me.Label2.TabIndex = 22
@@ -115,7 +101,7 @@ Partial Class frmOptions
         Me.btnCancel.Location = New System.Drawing.Point(116, 124)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(75, 23)
-        Me.btnCancel.TabIndex = 11
+        Me.btnCancel.TabIndex = 25
         Me.btnCancel.Text = "Cancel"
         Me.btnCancel.UseVisualStyleBackColor = True
         '
@@ -124,9 +110,23 @@ Partial Class frmOptions
         Me.btnReset.Location = New System.Drawing.Point(35, 124)
         Me.btnReset.Name = "btnReset"
         Me.btnReset.Size = New System.Drawing.Size(75, 23)
-        Me.btnReset.TabIndex = 10
+        Me.btnReset.TabIndex = 20
         Me.btnReset.Text = "Reset"
         Me.btnReset.UseVisualStyleBackColor = True
+        '
+        'txtRangeMin
+        '
+        Me.txtRangeMin.Location = New System.Drawing.Point(147, 83)
+        Me.txtRangeMin.Name = "txtRangeMin"
+        Me.txtRangeMin.Size = New System.Drawing.Size(45, 20)
+        Me.txtRangeMin.TabIndex = 10
+        '
+        'txtRangeMax
+        '
+        Me.txtRangeMax.Location = New System.Drawing.Point(229, 83)
+        Me.txtRangeMax.Name = "txtRangeMax"
+        Me.txtRangeMax.Size = New System.Drawing.Size(45, 20)
+        Me.txtRangeMax.TabIndex = 15
         '
         'frmOptions
         '
@@ -135,31 +135,33 @@ Partial Class frmOptions
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.btnCancel
         Me.ClientSize = New System.Drawing.Size(284, 167)
+        Me.Controls.Add(Me.txtRangeMax)
+        Me.Controls.Add(Me.txtRangeMin)
         Me.Controls.Add(Me.btnReset)
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btnOK)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.txtRangeMax)
-        Me.Controls.Add(Me.txtRangeMin)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.ckbxRandomOperator)
         Me.Controls.Add(Me.cmbxOperator)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Name = "frmOptions"
         Me.Text = "Options"
+        CType(Me.txtRangeMin, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtRangeMax, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents txtRangeMin As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents ckbxRandomOperator As System.Windows.Forms.CheckBox
     Friend WithEvents cmbxOperator As System.Windows.Forms.ComboBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents btnOK As System.Windows.Forms.Button
-    Friend WithEvents txtRangeMax As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents btnCancel As System.Windows.Forms.Button
     Friend WithEvents btnReset As System.Windows.Forms.Button
+    Friend WithEvents txtRangeMin As System.Windows.Forms.NumericUpDown
+    Friend WithEvents txtRangeMax As System.Windows.Forms.NumericUpDown
 End Class
