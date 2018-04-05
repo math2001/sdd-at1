@@ -62,4 +62,8 @@
         txtRangeMax.Text = 12
         txtRangeMin.Text = 0
     End Sub
+
+    Private Sub cmbxOperator_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbxOperator.SelectedIndexChanged
+
+    End Sub
 End Class

@@ -62,7 +62,7 @@ Partial Class frmOptions
         Me.cmbxOperator.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbxOperator.Enabled = False
         Me.cmbxOperator.FormattingEnabled = True
-        Me.cmbxOperator.Items.AddRange(New Object() {"+", "-", "*", "/"})
+        Me.cmbxOperator.Items.AddRange(New Object() {"+", "-", "x", "/"})
         Me.cmbxOperator.Location = New System.Drawing.Point(130, 14)
         Me.cmbxOperator.Name = "cmbxOperator"
         Me.cmbxOperator.Size = New System.Drawing.Size(75, 21)

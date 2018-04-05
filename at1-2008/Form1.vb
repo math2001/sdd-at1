@@ -53,7 +53,7 @@
                 actualResult = operand1 + operand2
             Case "-"
                 actualResult = operand1 - operand2
-            Case "*"
+            Case "x"
                 actualResult = operand1 * operand2
             Case "/"
                 actualResult = operand1 \ operand2
