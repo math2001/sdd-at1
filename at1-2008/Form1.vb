@@ -9,6 +9,29 @@
         ask()
     End Sub
 
+    Private Function choose(ByVal ParamArray elements() As Object)
+        Dim rand As New Random
+        Return elements(rand.Next(0, elements.Length))
+    End Function
+
+    Private Function getPositiveMessage(ByVal strike As Integer)
+        If strike = 10 Then
+            Return "Whoo! 10 in a row!"
+        ElseIf strike = 100 Then
+            Return "Are you cheating? :D"
+        End If
+        Return choose("Well done!", "Good answer!", "That's correct!", If(strike > 0, "An other one!", "Starting a strike!"))
+    End Function
+
+    Private Function getNegativeMessage(ByVal strike As Integer)
+        If strike = -10 Then
+            Return "That's not too good... Take your time"
+        ElseIf strike = -100 Then
+            Return "You do it wrong willingly, right?"
+        End If
+        Return choose("Oops...", "Hum... nah.", "Not quite...", "Nope. Give this one an other crack.")
+    End Function
+
     Public Sub ask()
         operator_ = frmOptions.getOperator()
 
@@ -22,7 +45,6 @@
         txtResult.Focus()
         txtResult.Text = ""
         txtRest.Text = "0"
-
 
         lblOperator.Text = operator_
         lblRest.Enabled = operator_ = "/"
@@ -79,13 +101,13 @@
 
         ' givenRest is automatically set to 0 when asking a new question.
         If givenResult = actualResult And givenRest = actualRest Then
-            setMessage("Good answer!", Color.Green)
             If currentStrike < 0 Then
                 currentStrike = 0
             Else
                 currentStrike += 1
             End If
             successQuestions += 1
+            setMessage(getPositiveMessage(currentStrike), Color.Green)
         Else
             setMessage("Oops... Wrong answer. ", Color.Red)
             If operator_ = "/" Then
